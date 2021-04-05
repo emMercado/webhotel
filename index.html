@@ -3,145 +3,345 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="css/style.css">
+
     <title>New Hotel Talampasha</title>
 </head>
 
+
+
 <body>
+	
     <div data-role="page" id="main">
-    	
-    	<div data-role="header">
-    		<h1>New Hotel Talampasha</h1>
-    		<nav>
-    			<ul>
-					<li><a href="index.html#main">Home</a></li>
-					<li><a href="index.html#about">About</a></li>
-					<li><a href="activities.html">Activities</a></li>
-                    <li><a href="index.html#restaurant">Restaurant</a></li>
-					<li><a href="index.html#testimonials">Testimonials</a></li>
-					<li><a href="index.html#pack">Pack</a></li>
-					<li><a href="reservation.html">Reservation</a></li>
-                    <li><a href="room.html">Rooms</a></li>
-					<li><a href="contact.html">ContactUs</a></li>			
-				</ul>
-    		</nav>
-			<img src="https://static1.lasprovincias.es/www/multimedia/201708/09/media/115036672.jpg">
-    	</div>
-		<br><hr>
-    	<div data-role="content">
-			<section id="about">
-				<div>
-					<h2>About Talampasha</h2>
-					<p>Lorem Ipsum is simply dummy text of the printing <br>
-						and typesetting industry. Lorem Ipsum has been <br>
-						the industry's standard dummy text ever since <br>
-						the 1500s, when an unknown printer took a galley <br>
-						of type and scrambled it to make a type specimen <br>
-						book. It has survived not only five centuries, <br>
-						but also the leap into electronic typesetting, <br>
-						emaining essentially unchanged. It was popularised <br>
-						in the 1960s with the release of Letraset sheets <br>
-						containing Lorem Ipsum passages, and more recently <br>
-					</p>
-					
-					<img src="img/about.webp" alt="">
-					<br><br>
+		
+		<div class="container-header-all">
+			<h1 class="header-title">New Hotel Talampasha</h1>
+			<div class="row aling-items-start" >
+				<div class="col">
+					<header>	
+<!-- ----------------------------------------------------------------------- -->
+<!--      aca parece q no hay nada pero es la imagen de la cabezera xd       -->
+<!-- ----------------------------------------------------------------------- -->
+					</header>
+				</div>
+			</div>
+		</div>
 
-					<li><a href="">View More</a></li>
-					<br>
-					<a href="#main">back to up << </a>
-				<hr>									
-				</div>
-				<br>
-				<div id="restaurant">
-					<h3>Restaurant</h3>
-					<img src="img/rest.jpeg" alt="">
-					<p>Lorem Ipsum is simply dummy text of the printing <br>
-						and typesetting industry. Lorem Ipsum has been <br>
-						the industry's standard dummy text ever since <br>
-					</p>
-					<img src="img/res2.jpg" alt="">
-					<p>Lorem Ipsum is simply dummy text of the printing <br>
-						and typesetting industry. Lorem Ipsum has been <br>
-						the industry's standard dummy text ever since <br>
-					</p>
-					
-					<ul>
-						<li><a href="">View More</a></li>
-					</ul>
-					<a href="#main">back to up << </a>
-				</div>
-				<br>
-				<hr><br>
-				<h2>Some customers</h2>
-				<div id="testimonials">
-					<h4>Testimonials</h4>
-					<img src="img/test.jpeg" alt="">
-					<p>Lorem Ipsum is simply dummy text of the printing <br>
-						and typesetting industry. Lorem Ipsum has been <br>
-						the industry's standard dummy text ever since <br>
-					</p>
-					
-					
-				</div>
-				<div>
-					
-					<h4>Testimonial 2</h4>
-					<img src="img/test1.jpeg" alt="">
-					<p>Lorem Ipsum is simply dummy text of the printing <br>
-						and typesetting industry. Lorem Ipsum has been <br>
-						the industry's standard dummy text ever since <br>
-					</p>
-				</div>	
+<!-- ----------------------------------------------------------------------- -->
+<!--                                 navbar                                  -->
+<!-- ----------------------------------------------------------------------- -->
+			<!--
+    		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">Navbar</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					  </button>
 				
-			</section>
-			<a href="#main">back to up << </a>
-    		<br><hr>
+					<ul>
+						<li><a href="index.html#main">Home</a></li>
+						<li><a href="index.html#about">About</a></li>
+						<li><a href="activities.html">Activities</a></li>
+						<li><a href="index.html#restaurant">Restaurant</a></li>
+						<li><a href="index.html#testimonials">Testimonials</a></li>
+						<li><a href="index.html#pack">Pack</a></li>
+						<li><a href="reservation.html">Reservation</a></li>
+						<li><a href="room.html">Rooms</a></li>
+						<li><a href="contact.html">ContactUs</a></li>			
+					</ul>
+				</div>
+    		</nav>
+			-->
+			<nav class="navbar navbar-dark bg-dark navbar fixed-top nav-fixed navbar-brand" >
+				<div class="container-fluid">
+					<ul class="nav nav-pills col">
+						<li class="nav-item">
+							<a class="navbar-brand" href="index.html#main">Home</a>
+							<a class="navbar-brand" href="index.html#about">About</a>
+							<a class="navbar-brand" href="activities.html">Activities</a>
+							<a class="navbar-brand" href="index.html#restaurant">Restaurant</a>
+							<a class="navbar-brand" href="index.html#testimonials">Testimonials</a>
+							<a class="navbar-brand" href="index.html#pack">Pack</a>
+							
+							<a class="navbar-brand" href="reservation.html">Reservation</a>
+							<a class="navbar-brand" href="room.html">Rooms</a>
+							<!-- --------------------------------------
+								<a class="navbar-brand" href="contact.html">ContactUs</a>
+								--------------------------------- -->
+							
+							
+						</li>
+					</ul>
+			</nav>
 
+		
+    	<div data-role="content">
+
+			<!-- ----------------------------------------------------------------------- -->
+<!--                                  about                                  -->
+<!-- ----------------------------------------------------------------------- -->
+
+			<section id="about">
+				<h2 class="header-title">About Talampasha</h2>
+				<div class="container">
+					<div class="row aling-items-start">
+						<div class="col container-about">
+							
+							<div class="container-text-about">
+								<div class="container-containers"></div>
+								<h6 >Lorem Ipsum is simply dummy text of the printing <br>
+									and typesetting industry. Lorem Ipsum has been <br>
+									the industry's standard dummy text ever since <br>
+									the 1500s, when an unknown printer took a galley <br>
+									of type and scrambled it to make a type specimen <br>
+									book. It has survived not only five centuries, <br>
+									but also the leap into electronic typesetting, <br>												
+									</h6>
+									<button class="btn btn-primary" type="submit">View More</button>
+							</div>
+							
+							<div class="container-container"></div>
+							
+						</div>
+						<div class="col container-img-about">
+							<div class="container-img">
+								<img  class="" src="img/about.webp" alt="">
+							</div>
+							
+							
+						</div>
+					</div>
+													
+				</div>
+				<br>
+				<br>
+				<br>
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                               restaurant                                -->
+<!-- ------------------------------------------------------------------
+				
+				<h3 class="header-title">Restaurant</h3>
+				<div class="container">
+					
+					
+					<div class="row aling-items-start">
+						<div class="container-restaurant">
+						<div class="col" id="restaurant">
+							
+								<img class="" src="img/res2.jpg" alt="" aling="center">
+								p>Lorem Ipsum is simply dummy text of the printing <br>
+								and typesetting industry. Lorem Ipsum has been <br>
+								the industry's standard dummy text ever since <br>
+								</p>
+							<button class="btn btn-primary" type="submit">View More</button>
+							
+							
+						
+						</div>
+					</div>	
+						<div class="col">
+							<img class="img-fluid" src="img/rest.jpeg" alt="">
+							<p>Lorem Ipsum is simply dummy text of the printing <br>
+								and typesetting industry. Lorem Ipsum has been <br>
+								the industry's standard dummy text ever since <br>
+							</p>
+							<button class="btn btn-primary" type="submit">View More</button>
+						</div>
+						
+					</div>
+					<hr>
+				</div>			
+			</section>
+			----- -->
+
+			<h2 class="header-title">Restaurant</h2>
+				<div class="container ">
+					
+					<div class="row aling-items-start">
+						<div class="col container-about">
+							<h5 class="header-title">Restaurant Ratattuile</h5>
+							<div class="container-text-about">
+								
+								<div class="container-containers"></div>
+								
+								<img class="" src="img/res2.jpg" alt="" aling="center">
+							</div>
+							<p>Lorem Ipsum is simply dummy text of the printing <br>
+								and typesetting industry. Lorem Ipsum has been <br>
+								the industry's standard dummy text ever since <br>
+								<button class="btn btn-primary" type="submit">Promotions</button>
+							</p>
+							
+							
+							
+						</div>
+						<div class="col container-img-restaurant">
+							<h5 class="header-title">New Bar</h5>
+							<div class="container-img">
+								<img class="img-fluid" src="img/bar.jpg" alt="">
+							<p>Lorem Ipsum is simply dummy text of the printing
+							
+								
+							</p>
+							<button class="btn btn-primary" type="submit">View More</button>
+							</div>
+						</div>
+					</div>							
+				</div>
+				<br>
+				<br>
+				<br>
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                               testimonial                               -->
+<!-- ----------------------------------------------------------------------- -->
+
+			<section id="testimonial">
+				<h2 class="header-title">Some customers</h2>
+				<div class="container">
+					<div class="row aling-items-start">
+					
+						<div class="col" id="testimonials">
+							<h4>Testimonials</h4>
+							<img src="img/test.jpeg" alt="">
+							<p>Lorem Ipsum is simply dummy text of the printing <br>
+								and typesetting industry. Lorem Ipsum has been <br>
+								the industry's standard dummy text ever since <br>
+							</p>
+							
+							
+						</div>
+						<div class="col">							
+							<h4>Testimonial 2</h4>
+							<img src="img/test1.jpeg" alt="">
+							<p>Lorem Ipsum is simply dummy text of the printing <br>
+								and typesetting industry. Lorem Ipsum has been <br>
+								the industry's standard dummy text ever since <br>
+							</p>
+						</div>	
+						<div class="col">							
+							<h4>Testimonial 3</h4>
+							<img src="img/test1.jpeg" alt="">
+							<p>Lorem Ipsum is simply dummy text of the printing <br>
+								and typesetting industry. Lorem Ipsum has been <br>
+								the industry's standard dummy text ever since <br>
+							</p>
+						</div>	
+					</div>
+				</div>
+			</section>
+			
+			<hr>
+<!-- ----------------------------------------------------------------------- -->
+<!--                                  pack                                   -->
+<!-- ----------------------------------------------------------------------- -->
 			<section id="pack">
-				<h2>Best pack for you</h2>
-				<div>
-					<h3>Pack 1</h3>
-					<p>Lorem Ipsum is simply dummy text of the printing <br>
-						and typesetting industry. Lorem Ipsum has been <br>
-						the industry's standard dummy text ever since <br>
-					</p>
-					<ul>
-						<li><a href="room.html">Get now</a></li>
-					</ul>
-				</div>
-				<div>
-					<h3>Pack 2</h3>
-					<p>Lorem Ipsum is simply dummy text of the printing <br>
-						and typesetting industry. Lorem Ipsum has been <br>
-						the industry's standard dummy text ever since <br>
-					</p>
-					<ul>
-						<li><a href="room.html">Get now</a></li>
-					</ul>
-				</div>
-				<div>
-					<h3>Pack 3</h3>
-					<p>Lorem Ipsum is simply dummy text of the printing <br>
-						and typesetting industry. Lorem Ipsum has been <br>
-						the industry's standard dummy text ever since <br>
-					</p>
-					<ul>
-						<li><a href="room.html">Get now</a></li>
-					</ul>
+			<h2 class="header-title">Best pack for you</h2>
+			
+			<div class="container">
+				<div class="row aling-items-start">
+					<div class="col">
+						<div class="card" style="width: 18rem">
+							<img src="img/run.png" class="card-img-top" alt="...">
+							<div class="card-body">
+
+							<h5 class="card-title">Suite deluxe</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<a href="room.html" class="btn btn-primary">Go somewhere</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card" style="width: 18rem;">
+							<img src="img/run.png" class="card-img-top" alt="...">
+							<div class="card-body">
+
+							<h5 class="card-title">Presidential Pack</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<a href="room.html" class="btn btn-primary">Go somewhere</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card" style="width: 18rem;">
+							<img src="img/run.png" class="card-img-top" alt="...">
+							<div class="card-body">
+
+							<h5 class="card-title">Pack excelential</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<a href="room.html" class="btn btn-primary">Go somewhere</a>
+							</div>
+						</div>
+					</div>
 				</div>
 
+			</div>
 			</section>
-
     	</div>
-		<a href="#main">back to up << </a> 
 
 		<hr>
-
-    	<div data-role="footer">
-    		<h4>All right reserved © copyright </h4>
-    	</div>
-
+<!-- ----------------------------------------------------------------------- -->
+<!--                                 footer                                  -->
+<!-- ----------------------------------------------------------------------- -->
+		<footer>
+			<div data-role="footer" class="container-footer-all">
+				<div class="container-body">
+					<div class="colum1">
+						<h1>More information</h1>
+						<p>Some quick example text to build on the card <br>
+							title and make up the bulk of the card's content.</p>
+					</div>
+					<div class="colum2">
+						<h1>Social Network</h1>
+						<div class="row">
+							<img src="" alt="">
+							<label for="">Follow in Facebook</label>
+						</div>
+						<div class="row">
+							<img src="" alt="">
+							<label for="">Follow in Instagram</label>
+						</div>
+						<div class="row">
+							<img src="" alt="">
+							<label for="">Follow in Twitter</label>
+						</div>	
+					</div>
+					<div class="colum3">
+						<h1>Data Information</h1>
+						<div class="row2">
+							<img src="" alt="">
+							<label for="">Address</label>
+						</div>
+						<div class="row2">
+							<img src="" alt="">
+							<label for="">+54-380-421-2491</label>
+						</div>
+						<div class="row2">
+							<img src="" alt="">
+							<label for="">talampashashotels@hotels.com</label>
+						</div>
+					</div>
+	
+				</div>
+			</div>
+			<div class="container-footer">
+				<div class="footer">
+					<div class="copyright">
+						© 2021 All right reserved | <a href="">True.damagee</a>
+					</div>
+					<div class="information">
+						<a href="">Enterprise Information</a> | <a href="">Privation & Politics</a> | <a href="">Condition & Terms</a>
+					</div>
+				</div>
+			</div>
+		</footer>
     </div>
-  
 </body>
 </html>
