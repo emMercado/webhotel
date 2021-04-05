@@ -3,66 +3,178 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="css/style.css">
+
+    <title>Hotel Talampasha Reservations</title>
 </head>
 <body>
     <div data-role="page" id="reservation">
-        <div data-role="header">
-    		<h1>New Hotel Talampasha</h1>
-    		<nav>
-    			<ul>
-                    <li><a href="index.html#main">Home</a></li>
-					<li><a href="index.html#about">About</a></li>
-					<li><a href="activities.html">Activities</a></li>
-                    <li><a href="index.html#restaurant">Restaurant</a></li>
-					<li><a href="index.html#pack">Pack</a></li>
-					<li><a href="reservation.html">Reservation</a></li>
-                    <li><a href="room.html">Rooms</a></li>
-					<li><a href="contact.html">ContactUs</a></li>		
-				</ul>
-    		</nav>
+        <div data-role="header" class="container-header-all ">
+    		<h1 class="header-title">New Hotel Talampasha</h1>
+            <nav class="navbar navbar-dark bg-dark navbar fixed-top nav-fixed navbar-brand" >
+				<div class="container-fluid">
+					<ul class="nav nav-pills col">
+						<li class="nav-item">
+							<a class="navbar-brand" href="index.html#main">Home</a>
+							<a class="navbar-brand" href="index.html#about">About</a>
+							<a class="navbar-brand" href="activities.html">Activities</a>
+							<a class="navbar-brand" href="index.html#restaurant">Restaurant</a>
+							<a class="navbar-brand" href="index.html#testimonials">Testimonials</a>
+							<a class="navbar-brand" href="index.html#pack">Pack</a>
+							
+							<a class="navbar-brand" href="reservation.html">Reservation</a>
+							<a class="navbar-brand" href="room.html">Rooms</a>
+							<!-- --------------------------------------
+								<a class="navbar-brand" href="contact.html">ContactUs</a>
+								--------------------------------- -->
+							-
+						</li>
+					</ul>
+			</nav>
     	</div>
-        <hr>
-        <div data-role="content">
-            <h2>Reserve Now</h2>
-           
-            <form action="">
-                <label for="fname">Name:</label>
-                <input type="text" id="fname" name="fname"><br><br>
-                <label for="lname">Last Name:</label>
-                <input type="text" id="lname" name="lname"><br><br>
-                <label for="email">E-mail:</label>
-                <input type="text" id="email" name="email"><br><br>
-                <label for="phone">Phone:</label>
-                <input type="text" id="phone" name="phone"><br><br>
-                <label for="pack">Select you Pack</label>
-                <select name="pack" id="pack">
-                    <option value="pack1">Premium Suite</option>
-                    <option value="pack2">Suite</option>
-                    <option value="pack3">Presidential Suit</option>
-                </select><br><br>
-                <label for="card-number">Card:</label>
-                <input type="text" id="card" name="card"><br><br>
-                <label for="card">Select you card</label>
-                <select name="card" id="cars">
-                    <option value="master">MasterCard</option>
-                    <option value="visa">Visa</option>
-                    <option value="americanxpres">American Express</option>
-                </select><br><br>
-                <label for="descount-number">Insert descount cuppon</label>
-                <input type="text" id="descount" name="descount"><br><br>
-                <br><br>
-              <input type="submit" value="Submit">
-              </form>  
-              <hr>
+        
+
+        <div data-role="content" class="container">
+            <h2 class="title-form">Reserve Now</h2>
+           <br>
+            <div class="container-form">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                  
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <span class="input-group-text" id="basic-addon2">@example.com</span>
+                  </div>
+                  
+                  <label for="basic-url" class="form-label">Your vanity URL</label>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                  </div>
+                  
+                  <div class="input-group mb-3">
+                    <span class="input-group-text">$</span>
+                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    <span class="input-group-text">.00</span>
+                  </div>
+                  
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+                    <span class="input-group-text">@</span>
+                    <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+                  </div>
+                  
+                  <div class="input-group">
+                    <span class="input-group-text">With textarea</span>
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                  </div>
+            </div>
+            
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                                formviejo                                -->
+<!-- ----------------------
+
+            <div class="container-text-reserve">
+                <div class="container-text">
+                    <form action="">
+                        <label for="fname">Name:</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="lname">Last Name:</label>
+                        <input type="text" id="lname" name="lname"><br><br>
+                        <label for="email">E-mail:</label>
+                        <input type="text" id="email" name="email"><br><br>
+                        <label for="phone">Phone:</label>
+                        <input type="text" id="phone" name="phone"><br><br>
+                        <label for="pack">Select you Pack</label>
+                        <select name="pack" id="pack" class="form-select" aria-label="Default select example >
+                            <option value="pack1">Premium Suite</option>
+                            <option value="pack2">Suite</option>
+                            <option value="pack3">Presidential Suit</option>
+                        </select><br><br>
+                        <label for="card-number">Card:</label>
+                        <input type="text" id="card" name="card"><br><br>
+                        <label for="card">Select you card</label>
+                        <select name="card" id="cars">
+                            <option value="master">MasterCard</option>
+                            <option value="visa">Visa</option>
+                            <option value="americanxpres">American Express</option>
+                        </select><br><br>
+                        <label for="descount-number">Insert descount cuppon</label>
+                        <input type="text" id="descount" name="descount"><br><br>
+                        <br><br>
+                      <input type="submit" value="Submit">
+                      </form>  
+                </div>
+                
+                  
+            </div>
+            ------------------------------------------------- -->
+            
               
         </div>
 
-        <div data-role="footer">
-            
-                <h4>All right reserved © copyright </h4>
-       
-        </div>
+          <!-- ----------------------------------------------------------------------- -->
+<!--                                 footer                                  -->
+<!-- ----------------------------------------------------------------------- -->
+		<footer>
+			<div data-role="footer" class="container-footer-all">
+				<div class="container-body">
+					<div class="colum1">
+						<h1>More information</h1>
+						<p>Some quick example text to build on the card <br>
+							title and make up the bulk of the card's content.</p>
+					</div>
+					<div class="colum2">
+						<h1>Social Network</h1>
+						<div class="row">
+							<img src="" alt="">
+							<label for="">Follow in Facebook</label>
+						</div>
+						<div class="row">
+							<img src="" alt="">
+							<label for="">Follow in Instagram</label>
+						</div>
+						<div class="row">
+							<img src="" alt="">
+							<label for="">Follow in Twitter</label>
+						</div>	
+					</div>
+					<div class="colum3">
+						<h1>Data Information</h1>
+						<div class="row2">
+							<img src="" alt="">
+							<label for="">Address</label>
+						</div>
+						<div class="row2">
+							<img src="" alt="">
+							<label for="">+54-380-421-2491</label>
+						</div>
+						<div class="row2">
+							<img src="" alt="">
+							<label for="">talampashashotels@hotels.com</label>
+						</div>
+					</div>
+	
+				</div>
+			</div>
+			<div class="container-footer">
+				<div class="footer">
+					<div class="copyright">
+						© 2021 All right reserved | <a href="">True.damagee</a>
+					</div>
+					<div class="information">
+						<a href="">Enterprise Information</a> | <a href="">Privation & Politics</a> | <a href="">Condition & Terms</a>
+					</div>
+				</div>
+			</div>
+		</footer>
 
     </div>
 </body>
